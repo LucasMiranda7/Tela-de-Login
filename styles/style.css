@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&display=swap');
+
+:root {
+
+  /* Cores */
+
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color:  #ededed;
+  --main-color: #00abf0;
+
+  /* Fontes */
+  --fonte1: "Bebas Neue", sans-serif;
+  --fonte2: "Archivo Black", sans-serif;
+  --fonte3: Arial, Helvetica, sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.login_geral {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Login</title>
 </head>
 <body>
-   <main class="conteiner-login">
-    <div class="esquerda">
-      <h1>Seja Bem Vindo!</h1>
-    </div>
-    <div class="direita">
-      <div class="card-login">
-        <h2>Login</h2>
-        <div class="textfield">
-          <label for="usuario">Usuário: </label>
-          <input type="text" name="usuario" placeholder="Usuario">
-        </div>
-        <div class="textfield">
-          <label for="senha">Senha</label>
-          <input class="teste" type="password" name="senha" placeholder="Senha">
-        </div>
-        <button class="btn-login">Login</button>
+  <main class="login_geral">
+
+    <!-- Parte esquerda da tela -->
+    <div class="tela_left">
+      <h1>Faça o cadastro <br> e faça parte da nossa comunidade</h1>
+        <img class="img_login" src="imgs/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" alt="img_login">
       </div>
     </div>
-  </main>
 
+    <!-- Parte direta da tela -->
+
+    <div class="tela_right">
+          <form class="tela_login">
+            <h2>LOGIN</h2>
+            <div class="textfield">
+              <label for="Usuario">Usuário: </label>
+              <input type="text" id="Usuario" name="Usuario" placeholder="Usuario">
+            </div>
+
+            <div class="textfield">
+              <label for="Senha">Senha: </label>
+              <input type="password" id="Senha" name="Senha" placeholder="Senha">
+            </div>
+            <input type="checkbox" name="Lembre-se"> Lembre se
+            <p><a href="#">Esqueceu a Senha?</a></p>
+          </form>
+          <button class="btn_login">Login</button>
+          <p>Ainda não tem uma Conta? <a href="#">Registre-se</a></p>
+    </div>
+  </main>
 </body>
 </html>
