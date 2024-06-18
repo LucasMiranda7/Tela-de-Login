@@ -19,6 +19,8 @@
 
 }
 
+/* Config global */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +30,11 @@
 
 body {
   background-color: var(--bg-color);
+  width: 100vw;
   height: 100vh;
 }
+
+/* Config geral */
 
 .login_geral {
  display: flex;
@@ -40,6 +45,7 @@ body {
  padding-top: 3%; 
 }
 
+/* Config do lado esquerdo */
 
 .tela_left {
   color: var(--main-color);
@@ -59,6 +65,9 @@ body {
   width: 90%;
   filter: drop-shadow(1px 1px 2px var(--main-color));
 }
+
+
+/* Config do lado Direito */
 
 
 .tela_right {
@@ -116,6 +125,8 @@ body {
 input::placeholder {
   color: var(--text-color);
 }
+
+/* Config do Alerta de Lembrar e Esqueceu a Senha */
 
 .login_alert {
   color: var(--text-color);
@@ -222,6 +233,8 @@ input::placeholder {
   background-color: #00acf096;
 }
 
+/* Config Botão Login */
+
 .sign_up {
   font-family: var(--fonte3);
   font-weight: 600;
@@ -240,4 +253,221 @@ input::placeholder {
   color: #00acf0ad;
 }
 
+
+
+
+/* Responsividade para Celulares */
+
+@media (max-width: 768px) {
+
+  * {
+    overflow: hidden;
+  }
+
+
+  .login_geral {
+    flex-direction: column-reverse;
+  }
+
+  .tela_left {
+    padding: 22px;
+    width: 100vw;
+  }
+  
+  .tela_left > h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .tela_left img {
+    width: 70%;
+  }
+
+
+  .tela_right {
+    padding: 2em;
+    width: 80%;
+   
+  }
+  
+  .tela_login {
+    gap: 7px;
+    transform: translate(0, -25px);
+  }
+  
+  .tela_login > h2 {
+    font-size: 25px;
+  }
+  
+  
+  .textfield > input {
+    width: 65vw;
+    max-width: 100%;
+    padding: 1.7em;
+    font-size: 12px;
+  }
+
+   .login_alert > a {
+    text-align: end;
+    font-family: var(--fonte3);
+    font-size: 10px;
+    padding-top: 0px;
+   }
+
+   .alert .alert-text {
+    padding-left: 1em;
+    font-family: var(--fonte3);
+    font-size: 10px;
+    transform: translate(0, -1px);
+   }
+  
+   .alert .alert-wrapper {
+    width: 30px; 
+    height: 15px;
+    left: 5px;
+   }
+  
+  
+   .alert .alert-wrapper .button-alert::before {
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 1.3px;
+    border-radius: 70%;
+   }
+  
+   .alert .alert-wrapper input:checked + .button-alert::before {
+    transform: translateX(15px);
+   }
+  
+
+   .btn_login {
+    font-size: 12px;
+    width: 30vh;;
+    max-width: 100%;
+    height: 10%;
+    max-height: 100%;
+    transform: translate(0, -12px);
+    margin: 0px auto;
+    transition: 0.6s;
+  }
+  
+  .sign_up {
+    font-size: 12px;
+    padding-top: 0.3em;
+  }
+  
+  
+}
+
+
+/* Responsividade para Tablets */
+
+
+
+@media (min-width: 768px) and (max-width: 1380px) {
+* {
+    overflow: hidden;
+  }
+
+  body {
+    display: flex;
+  }
+
+
+  .login_geral {
+    flex-wrap: nowrap;
+  }
+
+  .tela_left {
+    padding: 22px;
+    width: 50%;
+  }
+  
+  .tela_left > h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  
+  .tela_left img {
+    width: 100%;
+  }
+
+
+  .tela_right {
+    padding: 2em;
+    width: 40%;
+   
+  }
+  
+  .tela_login {
+    gap: 7px;
+    transform: translate(0, -25px);
+  }
+  
+  .tela_login > h2 {
+    font-size: 25px;
+  }
+  
+  
+  .textfield > input {
+    width: 65vw;
+    max-width: 100%;
+    padding: 1.7em;
+    font-size: 12px;
+  }
+
+   .login_alert > a {
+    text-align: end;
+    font-family: var(--fonte3);
+    font-size: 10px;
+    padding-top: 0px;
+   }
+
+   .alert .alert-text {
+    padding-left: 1em;
+    font-family: var(--fonte3);
+    font-size: 10px;
+    transform: translate(0, -1px);
+   }
+  
+   .alert .alert-wrapper {
+    width: 30px; 
+    height: 15px;
+    left: 5px;
+   }
+  
+  
+   .alert .alert-wrapper .button-alert::before {
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 1.3px;
+    border-radius: 70%;
+   }
+  
+   .alert .alert-wrapper input:checked + .button-alert::before {
+    transform: translateX(15px);
+   }
+  
+
+   .btn_login {
+    font-size: 12px;
+    width: 30vh;;
+    max-width: 100%;
+    height: 10%;
+    max-height: 100%;
+    transform: translate(0, -12px);
+    margin: 0px auto;
+    transition: 0.6s;
+  }
+  
+  .sign_up {
+    font-size: 12px;
+    padding-top: 0.3em;
+  }
+
+}
+
+  
 
