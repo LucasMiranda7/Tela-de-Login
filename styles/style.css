@@ -360,39 +360,13 @@ input::placeholder {
 }
 
 
-/* Responsividade para Telas Deitadas */
-
-
-@media screen and (min-width: 480px) and (orientation: portrait) {
-
-  body {
-    display: flex;
-    height: 50vw;
-  }
-
-
-  .tela_left > img {
-    max-width: 80%;
-    
-  }
-
-  .tela_right {
-    max-width: 40vw;
-    
-    
-  }
-  
-}
-
-
-
 /* Responsividade para Tablets */
 
 
 
-@media (min-width: 768.5px) and (max-width: 1380px) {
-* {
-    overflow: scroll;
+@media (min-width: 768px) and (max-width: 1380px) {
+  * {
+    overflow: hidden;
   }
 
   body {
@@ -494,6 +468,7 @@ input::placeholder {
 
 }
 
+
 /* Adicionais */
 
 @media (min-width: 300px) and (max-width: 350px) {
@@ -501,4 +476,3 @@ input::placeholder {
     overflow: scroll;
   }
 }
-
