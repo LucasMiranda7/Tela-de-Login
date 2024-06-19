@@ -258,7 +258,7 @@ input::placeholder {
 
 /* Responsividade para Celulares */
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
   * {
     overflow: hidden;
@@ -267,6 +267,7 @@ input::placeholder {
 
   .login_geral {
     flex-direction: column-reverse;
+    margin-top: 2em;
   }
 
   .tela_left {
@@ -275,18 +276,18 @@ input::placeholder {
   }
   
   .tela_left > h1 {
-    text-align: center;
-    font-size: 22px;
+    text-align: justify;
+    font-size: 16px;
   }
   
   .tela_left img {
-    width: 70%;
+    width: 55%;
   }
 
 
   .tela_right {
     padding: 2em;
-    width: 80%;
+    width: 65%;
    
   }
   
@@ -302,7 +303,7 @@ input::placeholder {
   
   .textfield > input {
     width: 65vw;
-    max-width: 100%;
+    max-width: 80%;
     padding: 1.7em;
     font-size: 12px;
   }
@@ -356,8 +357,33 @@ input::placeholder {
     padding-top: 0.3em;
   }
   
+}
+
+
+/* Responsividade para Telas Deitadas */
+
+
+@media screen and (min-width: 480px) and (orientation: portrait) {
+
+  body {
+    display: flex;
+    height: 50vw;
+  }
+
+
+  .tela_left > img {
+    max-width: 80%;
+    
+  }
+
+  .tela_right {
+    max-width: 40vw;
+    
+    
+  }
   
 }
+
 
 
 /* Responsividade para Tablets */
@@ -366,7 +392,7 @@ input::placeholder {
 
 @media (min-width: 768.5px) and (max-width: 1380px) {
 * {
-    overflow: hidden;
+    overflow: scroll;
   }
 
   body {
@@ -380,12 +406,12 @@ input::placeholder {
 
   .tela_left {
     padding: 22px;
-    width: 50%;
-  }
+     width: 50%;
+   }
   
   .tela_left > h1 {
-    text-align: center;
-    font-size: 32px;
+    text-align: justify;
+    font-size: 16px;
   }
   
   .tela_left img {
@@ -411,7 +437,7 @@ input::placeholder {
   
   .textfield > input {
     width: 65vw;
-    max-width: 100%;
+    max-width: 48%;
     padding: 1.7em;
     font-size: 12px;
   }
@@ -467,6 +493,8 @@ input::placeholder {
   }
 
 }
+
+/* Adicionais */
 
 @media (min-width: 300px) and (max-width: 350px) {
   * {
